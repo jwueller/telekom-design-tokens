@@ -114,7 +114,12 @@ StyleDictionary.registerFormat({
  * to the generated Tailwind CSS config key names
  */
 const mappings = [
-  { original: ['color', 'text-icon'], tailwindcss: ['colors', 'text-&-icon'] },
+  { original: ['color', 'text-icon'], tailwindcss: ['textColor'] },
+  { original: ['color', 'background'], tailwindcss: ['backgroundColor'] },
+  { original: ['color', 'functional'], tailwindcss: ['colors'] },
+  { original: ['color', 'additional'], tailwindcss: ['colors'] },
+  { original: ['color', 'ui', 'border'], tailwindcss: ['borderColor'] },
+  { original: ['color', 'ui'], tailwindcss: ['colors'] },
   { original: ['color'], tailwindcss: ['colors'] },
   { original: ['line-weight'], tailwindcss: ['borderWidth'] },
   { original: ['motion', 'duration'], tailwindcss: ['transitionDuration'] },
